@@ -1,6 +1,9 @@
+CPP = clang++
+CPPFLAGS = -Wall -Werror -std=c++17 -I./metal-cpp -framework Metal -framework Foundation -framework QuartzCore -framework MetalKit
+
 .PHONY: all
 all: metal-cpp
-	clang++ -std=c++17 -I./metal-cpp -framework Metal -framework Foundation -framework MetalKit main.cpp
+	$(CPP) $(CPPFLAGS) main.cpp
 
 metal-cpp_macOS12_iOS15.zip:
 	curl -o metal-cpp_macOS12_iOS15.zip https://developer.apple.com/metal/cpp/files/metal-cpp_macOS12_iOS15.zip
