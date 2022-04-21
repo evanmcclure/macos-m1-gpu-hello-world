@@ -30,3 +30,8 @@
 *.exe
 *.out
 *.app
+
+# Local
+__MACOSX/
+metal-cpp/
+metal-cpp_macOS12_iOS15.zip
