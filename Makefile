@@ -3,7 +3,7 @@ CPPFLAGS = -Wall -Werror -std=c++17 -I./metal-cpp -framework Metal -framework Fo
 
 .PHONY: all
 all: metal-cpp
-	$(CPP) $(CPPFLAGS) main.cpp
+	$(CPP) $(CPPFLAGS) main.cc
 
 metal-cpp_macOS12_iOS15.zip:
 	curl -o metal-cpp_macOS12_iOS15.zip https://developer.apple.com/metal/cpp/files/metal-cpp_macOS12_iOS15.zip
